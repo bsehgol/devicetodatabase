@@ -5,7 +5,7 @@
 ![plantmain](plantmain.jpg)
 
 
-We will be collecting environment data from the plant placed in my room in an apartment near Prospect Park and sending it to a server.  We’ll use a MKR ENV sheild, it has sensors. We don’t spend time wiring things up you just plug it in and get going. It has ENV libraries that are really easy to use. We will also use a soil monitor sensor. When we are a client we can write to a topic and publish our data. In this case we publish a JSON including temperature, humidity, pressure, illuminance, uva, uvb and soil moisture. Topics are added using the following commands.
+We will be collecting environment data from the plant placed in my room in an apartment near Prospect Park and send it to a server.  We’ll use a MKR ENV sheild, it has sensors. We don’t spend time wiring things up you just plug it in and get going. It has ENV libraries that are really easy to use. We will also use a soil monitor sensor. When we are a client we can write to a topic and publish our data. In this case we publish a JSON including temperature, humidity, pressure, illuminance, uva, uvb and soil moisture. Topics are added using the following commands.
 
 ```markdown
 String temperatureTopic = "itp/" + DEVICE_ID + "/temperature";
@@ -67,4 +67,6 @@ Data visualization tools such as MQTT explorer are there but I have used the cha
 
 ![plantilluminance](plantilluminance.jpg)
 
-To read the code I have used for this project please go to my [Github Repository](https://github.com/bsehgol/devicetodatabase/blob/master/soilmonitor/soilmonitor.ino)
+This was a great exercise in transferring data over MQTT from sensors to the server. I am looking forward to manipulate this data and visualize it in the coming weeks in class.
+
+To view the code I have used for this project please go to my [Github Repository](https://github.com/bsehgol/devicetodatabase/blob/master/soilmonitor/soilmonitor.ino)
