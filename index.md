@@ -1,10 +1,11 @@
 # Plant to Database
 
-#### "Oh wow green energy" a plant producing electricity!"
+#### "Oh wow green energy.. a plant producing electricity!"
 
 ![plantmain](plantmain.jpg)
 
-When we are a client we can write to a topic and publish our data. In this case we publish a JSON including temperature, humidity, pressure, illuminance, uva, uvb and soil moisture. Topics are added using the following commands.
+
+We’ll use a MKR ENV sheild it has sensors. We don’t spend time wiring things up you just plug it in and get going. It has ENV libraries that are really easy to use. We will also use a soil monitor sensor. When we are a client we can write to a topic and publish our data. In this case we publish a JSON including temperature, humidity, pressure, illuminance, uva, uvb and soil moisture. Topics are added using the following commands.
 
 ```markdown
 String temperatureTopic = "itp/" + DEVICE_ID + "/temperature";
@@ -36,7 +37,7 @@ The soil sensor is sending values through an analog pin "analogRead(A0)". For th
 #include <Arduino_MKRENV.h>
 ```
 
-The soil sensor is inserted into a pot of cilantro for testing, and later into a praying plant in a pot of fresh soil. 
+#### The soil sensor is inserted into a pot of cilantro for testing, and later into a praying plant in a pot of fresh soil. 
 
 ![soilsensor](soilsensor.jpg)
 
@@ -57,31 +58,5 @@ PICTTURE
 ![soilwater](soilwater.jpg)
 
 
-______________
- - We’ll use a MKR ENV shield we’ll get one of these, it has sensors. We don’t spend time wiring things up you just plug it in and get going. It has ENV libraries that are really easy to use. 
+To read the code I have used for this project please go to my [Github Repository](https://github.com/bsehgol/devicetodatabase/blob/master/soilmonitor/soilmonitor.ino)
 
-### Blog Post
-
-- The task was to monitor data
-
-
-## Welcome to Designing Meaningful Interactions by Katherine Dillon
-
-You can view [Week 4 presentation](https://docs.google.com/presentation/d/1d0VlyH_sJjfWlDtPem4eYXyoOKvPOLYIcXUFmmIPWgE/edit?usp=sharing) to see the problem we are trying to solve and the future state journey map!
-
-
-### 5 characteristics of good UX:
-```markdown
-Intuitive - without instructional manual
-Efficient - worth pepoles time,
-Memorable
-Anticipates errors
-Satisfying - so people want to come back
-```
-
-#### A lot of ux designers call themselves product designers.
-#### Product shouldn’t come with a manual with instructions it should be intuitive. 
-#### Focus on the user and all else will follow 
-#### Desirable experience = good business 
-
-```markdown
