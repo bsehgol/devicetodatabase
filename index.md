@@ -58,9 +58,6 @@ We have to comment this bit out. This is because the code is waiting for a Seria
 ![soilwater](soilwater.jpg)
 
 
-
-To read the code I have used for this project please go to my [Github Repository](https://github.com/bsehgol/devicetodatabase/blob/master/soilmonitor/soilmonitor.ino)
-
 Data visualization tools such as MQTT explorer are there but I have used the chart available for class exercises that visualizes environment temperature and humidity.
 
 ![visualdata](visualdata.png)
@@ -69,3 +66,5 @@ Data visualization tools such as MQTT explorer are there but I have used the cha
 
 
 ![plantilluminance](plantilluminance.jpg)
+
+To read the code I have used for this project please go to my [Github Repository](https://github.com/bsehgol/devicetodatabase/blob/master/soilmonitor/soilmonitor.ino)
