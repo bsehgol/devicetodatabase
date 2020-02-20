@@ -35,6 +35,7 @@ The soil sensor is sending values through an analog pin "analogRead(A0)". For th
 The soil sensor is inserted into a pot of cilantro for testing, and later into a praying plant in a pot of fresh soil. 
 
 PICTURE
+![soilsensor](soilsensor.jpg)
 
 The idea is to monitor data over a period of 48 hours so we need to connect the MKR 1010 to a power outlet. For this we need to tweak the code:
 
