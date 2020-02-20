@@ -48,15 +48,20 @@ The idea is to monitor data over a period of 48 hours so we need to connect the 
 ```
 We have to comment this bit out. This is because the code is waiting for a Serial connection before it starts running. The computer provides a serial connection. The power strip does not. 
 
-The data can now be viewed on www/subscribe index.html
+#### The data can now be viewed on www/subscribe index.html
 
-PICTTURE
+![mqttdata](mqttdata.png)
 
 
-#### When I watered the plant the soil mositure readings increase
+#### When I watered the plant the soil mositure readings deepen from 444 to 380. 
 
 ![soilwater](soilwater.jpg)
 
 
+
 To read the code I have used for this project please go to my [Github Repository](https://github.com/bsehgol/devicetodatabase/blob/master/soilmonitor/soilmonitor.ino)
+
+Data visualization tools such as MQTT explorer are there but I have used the chart available for class exercises that visualizes environment temperature and humidity.
+
+![visualdata](visualdata.png)
 
