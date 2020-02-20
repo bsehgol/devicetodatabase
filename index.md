@@ -65,3 +65,7 @@ Data visualization tools such as MQTT explorer are there but I have used the cha
 
 ![visualdata](visualdata.png)
 
+#### When illuminance changes in the room the data for illuminance changes 
+
+
+![plantilluminance](plantilluminance.jpg)
