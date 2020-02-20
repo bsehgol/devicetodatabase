@@ -1,11 +1,11 @@
 # Plant to Database
 
-#### "Oh wow green energy.. a plant producing electricity!"
+#### "Oh wow green energy.. a plant producing electricity!" 
 
 ![plantmain](plantmain.jpg)
 
 
-We’ll use a MKR ENV sheild it has sensors. We don’t spend time wiring things up you just plug it in and get going. It has ENV libraries that are really easy to use. We will also use a soil monitor sensor. When we are a client we can write to a topic and publish our data. In this case we publish a JSON including temperature, humidity, pressure, illuminance, uva, uvb and soil moisture. Topics are added using the following commands.
+We will be collecting environment data from the plant placed in my room in an apartment near Prospect Park and sending it to a server.  We’ll use a MKR ENV sheild, it has sensors. We don’t spend time wiring things up you just plug it in and get going. It has ENV libraries that are really easy to use. We will also use a soil monitor sensor. When we are a client we can write to a topic and publish our data. In this case we publish a JSON including temperature, humidity, pressure, illuminance, uva, uvb and soil moisture. Topics are added using the following commands.
 
 ```markdown
 String temperatureTopic = "itp/" + DEVICE_ID + "/temperature";
@@ -21,7 +21,7 @@ String uvbTopic = "itp/" + DEVICE_ID + "/uvb";
 
 MQTT in addition to be lightweight gives us a serve path so its easier than HTTP. We will be using MQTT. MQTT broker does not store anything, it receives a message, it asks who is subscribing to these topics, and then sends it out to them. Our broker is itpdtd.com.
 
-After adding new topic for soil we add this command so we can read and send data. 
+After adding a new topic for soil we add this command so we can read and send data. 
 
 ```markdown
 int soil = analogRead(A0);
