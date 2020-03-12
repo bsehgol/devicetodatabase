@@ -3,8 +3,33 @@
 ### Tools that make queries an easy business
 
 #### Node Red
-An MQTTT Input is configured with itptd as the broker, and the topic is moisture for device 18. Then we introduce a function with a code for a message alert for when moisture is lower than 400. A message will be received in the debug window in Node Red whenever that is the condition.
+
+An MQTTT Input is configured with itptd as the broker, and the topic is moisture for device 18. Then we introduce a function with a code for a message alert for when moisture is lower than 400. A message will be received in the debug window in Node Red whenever that is the condition. This would help me water the plant methodically, whenever the moisture is low I will be notified to water it. 
+
 ![NodeRed](NodeRed.png)
+
+
+#### Grafana  
+
+When querying device 17, for illuminance and temperature one can see, the temperature, and illuminance drop each night over the past week. 
+
+![influx-device17](influx-device17.png)
+
+When querying device 18 fior humidity, it can be seen that the device was last on in February. 
+
+![influx-18](influx-18.png)
+
+Similarly we can see that device 17 was taken off over the past 6 hours. 
+
+![influx-device17-6hrs.png](influx-device17-6hrs.png)
+
+
+Zooming in on UVA data shows 
+
+![influx-device18-uva](influx-device18-uva.png)
+
+
+
 
 #### "Oh wow green energy.. a plant producing electricity!" 
 
