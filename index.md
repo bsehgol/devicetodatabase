@@ -24,7 +24,7 @@ Similarly we can see that device 17 was taken off over the past 6 hours.
 ![influx-device17-6hrs.png](influx-device17-6hrs.png)
 
 
-Zooming in on UVA data shows 
+Zooming in on UVA data shows relative stability in a 24 hours period
 
 ![influx-device18-uva](influx-device18-uva.png)
 
