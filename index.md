@@ -4,7 +4,7 @@
 
 #### Node Red
 An MQTTT Input is configured with itptd as the broker, and the topic is moisture for device 18. Then we introduce a function with a code for a message alert for when moisture is lower than 400. A message will be received in the debug window in Node Red whenever that is the condition.
-![Node Red](Node Red.png)
+![NodeRed](NodeRed.png)
 
 #### "Oh wow green energy.. a plant producing electricity!" 
 
